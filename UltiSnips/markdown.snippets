@@ -1,4 +1,4 @@
-priority -50
+extends tex, texmath
 
 global !p
 # A overkill(dirty) table with automatic alignment feature
@@ -51,6 +51,12 @@ def create_table(snip):
 	# expand anonymous snippet
 	snip.expand_anon(anon_snippet_table)
 endglobal
+
+snippet zb "bold env" wA
+**$1**$0
+endsnippet
+
+priority -50
 
 ###########################
 # Sections and Paragraphs #
